@@ -9,7 +9,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="theunraveler"
+ZSH_THEME="af-magic"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -65,7 +65,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/startup.sh 
+source $HOME/startup.sh
 
 # User configuration
 
@@ -96,5 +96,15 @@ source $HOME/startup.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sshd="cd /home/monizamudio/.ssh"
+alias tmux="TERM=xterm-256color tmux"
 alias vi="nvim"
 alias vim="nvim"
+alias en="cd $HOME/Repos/template_entregable"
+alias repos="cd /mnt/c/Users/Monica/Desktop/Repos/"
+alias tesis="cd $HOME/Repos/tesis"
+
+# Useful variables for directories
+export WH=/mnt/c/Users/Monica
+export REPOS=$HOME/Repos
+
+cd

@@ -62,7 +62,7 @@ if dein#load_state('$HOME/.config/nvim/bundles')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
 
-    " Writting
+    " Writing
     call dein#add('tpope/vim-surround')
     call dein#add('scrooloose/nerdcommenter')
     call dein#add('sbdchd/vim-shebang')
@@ -138,6 +138,10 @@ let g:rainbow_active = 1
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set splitright
+
+" Remove trailing spaces macro
+let @s=":%s/\\s\\+$//g"
 
 " ============================================================================
 " Powerline {{{1
@@ -234,8 +238,11 @@ au BufNewFile,BufRead *.R
 " ============================================================================
 
 " Where should the terminal open
+let g:neoterm_size = 60
 let g:neoterm_default_mod = ':vertical'
 let g:neoterm_keep_term_open = 1
+let g:neoterm_autoscroll = 1
+let g:neoterm_autojump = 1
 
 " Commands to deal with the terminal
 nnoremap <silent> <leader>to :Topen<CR>
@@ -243,9 +250,9 @@ nnoremap <silent> <leader>tc :Tclose<CR>
 nnoremap <silent> <leader>tt :Ttoggle<CR>
 nnoremap <silent> <leader>tk :Tkill<CR>
 nnoremap <silent> <leader>tl :Tclear<CR>
-nnoremap <silent> <leader>ts :T %:p<CR>
-nnoremap <silent> <leader>tp :T python %:p<CR>
-nnoremap <silent> <leader>tj :T julia<CR>
+nnoremap <silent> <leader>ts :T
+nnoremap <silent> <leader>tp :T ipython
+nnoremap <silent> <leader>tj :T julia
 
 " Easily change from insert to normal mode on a terminal
 tnoremap <Esc> <C-\><C-n>
