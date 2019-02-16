@@ -92,19 +92,7 @@ source $HOME/startup.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sshd="cd /home/monizamudio/.ssh"
-alias tmux="TERM=xterm-256color tmux"
-alias vi="nvim"
-alias vim="nvim"
-alias en="cd $HOME/Repos/template_entregable"
-alias repos="cd /mnt/c/Users/Monica/Desktop/Repos/"
-alias tesis="cd $HOME/Repos/tesis"
 
-# Useful variables for directories
-export WH=/mnt/c/Users/Monica
-export REPOS=$HOME/Repos
+# Aliases
 
-cd
+source $HOME/shortcuts.sh
