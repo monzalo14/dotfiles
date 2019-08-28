@@ -74,7 +74,7 @@ if dein#load_state('$HOME/.config/nvim/bundles')
 
     " Syntax
     call dein#add('vim-latex/vim-latex')
-    call dein#add('ivanov/vim-ipython')
+"    call dein#add('ivanov/vim-ipython')
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('ajpaulson/julia-syntax.vim')
 
@@ -90,7 +90,7 @@ if dein#load_state('$HOME/.config/nvim/bundles')
 
     " Cooperation
     call dein#add('tpope/vim-fugitive')
-    call dein#add('FredKSchott/CoVim')
+"    call dein#add('FredKSchott/CoVim')
 
     " Organize
     call dein#add('jceb/vim-orgmode')
@@ -164,7 +164,7 @@ endif
 set background=dark
 set encoding=utf8
 set guifont=IBM\ Plex\ Mono:h14
-colorscheme stellarized_dark
+colorscheme stellarized
 
 " ============================================================================
 " NERDTree {{{1
