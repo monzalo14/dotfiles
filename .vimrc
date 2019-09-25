@@ -14,7 +14,9 @@
 " ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
 "  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
 "
-" Author: Ollin Demian <ollin.demian@gmail.com>
+" Author: Mónica Zamudio <monzalo14@gmail.com>
+" Note: This file is heavily based on Ollin Demian's .vimrc
+" (see https://github.com/ollin18/dotfiles/blob/master/vim/.vimrc)
 "
 " ============================================================================
 " Neovim default {{{1
@@ -138,7 +140,6 @@ let g:rainbow_active = 1
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-set splitright
 
 " Remove trailing spaces macro
 let @s=":%s/\\s\\+$//g"
@@ -164,7 +165,7 @@ endif
 set background=dark
 set encoding=utf8
 set guifont=IBM\ Plex\ Mono:h14
-colorscheme stellarized
+colorscheme atlantis
 
 " ============================================================================
 " NERDTree {{{1
